@@ -1,16 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void meow(void)
-{
-    printf("meow\n");
-}
-
-int repeat(void)
-{
-    int c = get_int("how many times will repeat?\n");
-    return c;
-}
+void meow(void);
+int repeat(void);
 
 int main(void)
 {
@@ -20,4 +12,15 @@ int main(void)
     {
         meow();
     }
+}
+
+void meow(void)
+{
+    printf("meow\n");
+}
+
+int repeat(void)
+{
+    int c = get_int("how many times will repeat?\n");
+    return c;
 }
